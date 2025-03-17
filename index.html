@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proof of Hate :3</title>
+  <style>
+    /* Default dark mode styling with smooth transitions, cutie! */
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    /* Container for the content, all cute and professional */
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.5s forwards;
+    }
+    /* Heading styling */
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    /* Paragraph styling for our heartfelt message */
+    p {
+      line-height: 1.6;
+      font-size: 1.2em;
+    }
+    /* Proof image styling, showing off the evidence cutie! */
+    .proof-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transform: scale(0.95);
+      animation: zoomIn 1.5s forwards;
+      animation-delay: 1s;
+    }
+    /* Smooth fade in animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Zoom in animation for the image */
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    /* Button styling for toggling the mode */
+    .toggle-btn {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px auto;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+    .toggle-btn:hover {
+      background-color: #555;
+    }
+    /* Light mode styles when toggled, just for fun! */
+    body.light-mode {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    body.light-mode .container {
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    body.light-mode .toggle-btn {
+      background-color: #ddd;
+      color: #333;
+    }
+    body.light-mode .toggle-btn:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Proof of Hate :3</h1>
+    <p>
+      haii :3, im very confused and honestly just so disappointed. someone said some very awful racial and xenophobic words to me, their username is .th3v01d. i believe in spreading love and acceptance, and no one should be allowed to spread hate like that.
+    </p>
+    <p>
+      this page is a little reminder that such behavior is totally unacceptable. we must all stand against hate speech and support each other with kindness and empathy.
+    </p>
+    <img class="proof-image" src="emulated/0/storage/#ALL FUTURE PROJECTS/project 5/proof.jpg" alt="Proof Image">
+    <button class="toggle-btn" id="toggleBtn">Switch to Light Mode</button>
+  </div>
+  
+  <script>
+    
+    const toggleBtn = document.getElementById('toggleBtn');
+    toggleBtn.addEventListener('click', function() {
+      document.body.classList.toggle('light-mode');
+      if(document.body.classList.contains('light-mode')) {
+        toggleBtn.textContent = 'switch to dark mode';
+      } else {
+        toggleBtn.textContent = 'switch to light mode';
+      }
+    });
+    
+    window.addEventListener('load', () => {
+      console.log("loaded :3");
+    });
+  </script>
+</body>
+</html>
